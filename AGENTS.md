@@ -1,13 +1,13 @@
-## Agent skills
+# Agent skills
 
-### Issue tracker
+## Issue tracker
 
 Issues live in GitHub Issues (via `gh` CLI); external PRs are not a triage surface. See `docs/agents/issue-tracker.md`.
 
-### Triage labels
+## Triage labels
 
 Five labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
 
-### Domain docs
+## Domain docs
 
 Single-context: `CONTEXT.md` + `docs/adr/` at the repo root. See `docs/agents/domain.md`.
