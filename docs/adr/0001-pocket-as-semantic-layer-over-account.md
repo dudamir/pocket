@@ -1,7 +1,8 @@
 # Pocket is a semantic layer over a one-to-one Account
 
-Accounts are the real bank/credit institutions money moves between and transactions are pulled
-from. A pocket is a classification layered onto exactly one account, giving it a role (Daily,
-Credit Card, Saving, Emergency, or Investment). We chose this over storing money directly in
-named "pockets" because the same real account is what actually moves money, and budgets and
-cash-flow projections reason about real accounts through their role.
+Accounts represent bank or credit accounts, while a Pocket is the semantic role applied to an
+Account. Every Account has exactly one Pocket, which may temporarily be Unclassified, and multiple
+Accounts may share a role. This keeps imported balances and Transactions attached to real Accounts
+while Cash Flow, reporting, and suggestions reason through Pocket roles. A user may change a role
+after seeing its consequences; derived results are recalculated without overwriting manual
+Transaction choices.

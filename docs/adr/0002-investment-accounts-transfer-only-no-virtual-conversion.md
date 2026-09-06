@@ -1,8 +1,9 @@
 # Investment accounts are transfer-only; virtual accounts are not convertible
 
-Pockets does not pull or track transactions from investment accounts — it only sees money move
-into and out of them via Invest and Divest transfers. When a transaction description names a
-well-known institution (e.g. Fidelity), Pockets materializes a virtual account and classifies it
-as an Investment pocket. Virtual accounts are rename-only and can never be linked to a real
-account or converted. This keeps the scope tight: we deliberately do not attempt investment
-tracking, which would require position and valuation data outside this app's mandate.
+Pockets does not import or track positions, trades, valuations, or other activity inside Investment
+Accounts. It represents only observed Invest, Divest, and Investment transfers and derives a Net
+invested amount rather than market value. When a Transfer identifies a known investment institution
+without a corresponding Account, Pockets may create a renameable Virtual Account with stable
+institution identity and matching aliases. A Virtual Account cannot be linked or converted, although
+compatible Virtual Investment Accounts may merge; a Linked Account at the same institution may
+coexist. This deliberately avoids expanding Pockets into an investment tracker.
